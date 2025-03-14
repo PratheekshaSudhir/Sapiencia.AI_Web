@@ -30,6 +30,7 @@ body {
   text-transform: uppercase;
   background: linear-gradient(to bottom, #40d1e7, #2dc8e7);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   text-shadow: 
     2px 2px 0px #1746b3, 
