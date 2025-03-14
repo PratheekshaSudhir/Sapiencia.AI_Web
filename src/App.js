@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 function App() {
+  //const [searchTerm, setSearchTerm] = useState("");
   const services = [
     {
       title: "Healthcare AI Solutions",
@@ -20,12 +21,22 @@ function App() {
 
   return (
     <div>
-      {/* Navigation Bar */}
+      {/* Navigation Bar with Logo and Search */}
       <nav className="navbar">
-        <a href="#">Home</a>
-        <a href="#">Solutions</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <div className="logo">Sapiencia.AI</div>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="search-bar"
+         // value={searchTerm}
+          //onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <div className="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Solutions</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </div>
       </nav>
 
       {/* Hero Section */}

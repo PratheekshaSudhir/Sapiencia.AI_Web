@@ -10,15 +10,87 @@ body {
 /* Navigation Bar */
 .navbar {
   background: rgba(244, 246, 247, 0.933);
-  padding: 15px;
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
+/* Logo Styling */
+/* Logo Styling */
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif; /* Bold, modern font */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #40d1e7, #2dc8e7);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 
+    2px 2px 0px #1746b3, 
+    4px 4px 0px #000102, 
+    6px 6px 10px rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: inline-block;
+}
+
+/* 3D Effect: Adding an extra shadow layer */
+.logo::after {
+  content: "Sapiencia.AI";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  z-index: -1;
+  color: #5a3d00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Hover Effect */
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+
+
+/* Search Bar Styling */
+.search-bar {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 2px solid #0a0a0a;
+  border-radius: 20px;
+  outline: none;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #ffcc00;
+  box-shadow: 0px 0px 8px rgba(255, 204, 0, 0.6);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+}
+/* .navbar a {
   color:#0a0a0a;
   text-decoration: none;
   margin: 0 20px;
@@ -28,7 +100,7 @@ body {
 
 .navbar a:hover {
   color: #ffcc00;
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -75,18 +147,28 @@ body {
 }
 
 .cta.primary {
-  background: #ffcc00;
+  background: transparent;
+  color: #ffcc00;
+  font-weight: bolder;
+  border: 5px solid #ffcc00;
+}
+.cta.primary:hover{
+  opacity: 0.8;
+  background:#ffcc00;
   color: #000;
 }
 
 .cta.secondary {
   background: transparent;
-  border: 2px solid #ffcc00;
+  border: 5px solid #ffcc00;
+  font-weight: bolder;
   color: #ffcc00;
 }
 
 .cta:hover {
   opacity: 0.8;
+  background: #ffcc00;
+  color: #000;
 }
 
 /* Compliance Badges */
@@ -121,7 +203,7 @@ body {
   width: 30%;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(148, 152, 152, 0.342);
+  background: linear-gradient(to bottom,#1746b3,#b8bbb7);
   border-radius: 10px;
   transition: transform 0.1s ease-in-out;
 }
@@ -135,7 +217,7 @@ body {
   margin-top: 10px;
   padding: 10px 15px;
   background-color:#ffcc00;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
