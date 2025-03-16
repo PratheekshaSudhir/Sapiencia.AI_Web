@@ -3,21 +3,28 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 function App() {
-  //const [searchTerm, setSearchTerm] = useState("");
+  
   const services = [
     {
+      //icon: <FaHeartbeat className="text-5xl text-red-500" />,
       title: "Healthcare AI Solutions",
-      description: "✅ AI-driven medical imaging (early disease detection).",
+      description:
+        "Our AI-driven medical imaging enables early disease detection, while predictive analytics optimize hospital resources and reduce readmissions. We ensure secure, interoperable healthcare data and advanced anomaly detection for rare diseases and adverse events.",
     },
     {
-      title: "Salus IAM – Identity & Access Management",
-      description: "✅ Zero Trust Security – Identity-based access at every level.",
+      //icon: <FaUserShield className="text-5xl text-yellow-500" />,
+      title: "Salus IAM – Identity & Access Management for DoD",
+      description:
+        "Salus IAM provides Zero Trust Security, ensuring identity-based access at all levels. It supports tactical edge deployment in disconnected environments and meets DoD compliance standards (IL5/IL6, NIST 800-53, DISA STG). With phishing-resistant authentication and multi-domain federation, it integrates seamlessly across agencies.",
     },
     {
-      title: "Cybersecurity & AI System Security",
-      description: "✅ Penetration Testing – Simulated cyberattacks for AI-driven systems.",
+      //icon: <FaLock className="text-5xl text-blue-500" />,
+      title: "Cybersecurity & AI System Security Services",
+      description:
+        "Our Cybersecurity & AI Security Services include penetration testing to simulate cyberattacks on AI systems. We conduct cybersecurity audits to ensure compliance and use AI-driven threat detection for real-time defense against adversarial AI threats.",
     },
   ];
+
 
   return (
     <div>
@@ -60,24 +67,33 @@ function App() {
       </section>
 
       {/* Services Section with Staggered Animation */}
-      <section className="services">
-        <h2>Our Services</h2>
+      <section className="services p-10 rounded-xl">
+      <h2 className="text-center text-3xl font-bold text-white mb-8">
+        Our Services
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="card"
+            className="bg-white shadow-xl rounded-2xl p-6 flex flex-col items-start space-y-4"
             whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Alternates left (-100) & right (+100)
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
           >
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <button className="card-button">Learn More</button>
+            <div className="icon bg-gray-100 p-4 rounded-xl flex justify-center items-center">
+              {service.icon}
+            </div>
+            <h3 className="text-xl font-semibold">{service.title}</h3>
+            <p className="text-gray-700">{service.description}</p>
+            <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+              Learn More
+            </button>
           </motion.div>
         ))}
-      </section>
-
+      </div>
+    </section>
       {/* Footer */}
       <footer>
         <p>© 2025 AI Security Solutions | Defense & Healthcare</p>
