@@ -1,15 +1,17 @@
 /* General Styling */
 body {
-  background: #0a0a0a;
+  background: #0a082d;
   color: #ffffff;
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
+  padding:0;
+  overflow-x: hidden;
 }
 
 /* Navigation Bar */
 .navbar {
-  background: rgba(244, 246, 247, 0.933);
+  background: rgba(11, 12, 13, 0.267);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,22 +20,24 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+  box-sizing: border-box;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Styling */
 /* Logo Styling */
 .logo {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
   font-family: "Poppins", sans-serif; /* Bold, modern font */
   text-transform: uppercase;
   background: linear-gradient(to bottom, #40d1e7, #2dc8e7);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   text-shadow: 
-    2px 2px 0px #1746b3, 
-    4px 4px 0px #000102, 
+    2px 2px 0px #1796b3, 
+    4px 4px 0px #000202, 
     6px 6px 10px rgba(0, 0, 0, 0.7);
   position: relative;
   display: inline-block;
@@ -47,7 +51,7 @@ body {
   top: 4px;
   z-index: -1;
   color: #5a3d00;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 5px rgba(18, 16, 16, 0.6);
 }
 
 /* Hover Effect */
@@ -82,7 +86,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #0a0a0a;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
@@ -107,8 +111,8 @@ body {
   background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2dvMHd4MTBwOXMxNmR2emNtMHAwbzd4NWh4ZTV2ZjhycnQ0M2VmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FUiYuju9ZhKlVr5j/giphy.gif") 
     no-repeat center center;
   background-size: cover;
-  height: 45vh;  /* Full screen height */
-  width: 100vw;   /* Full screen width */
+  height: 40vh;  /* Full screen height */
+  width: 100%;   /* Full screen width */
   /* display: flex; */
   justify-content: center;
   align-items: center;
@@ -120,7 +124,7 @@ body {
 .hero h1 {
   font-size:70px;
   font-weight: bold;
-  padding-top: 18px;
+  padding-top: 10px;
   
 }
 
@@ -185,29 +189,30 @@ body {
   display: flex;
   justify-content: center;
   gap: 100px;
-  padding: 90px 0;
+  padding: 60px 0;
   /* margin-top: 15px; */
 }
 
 .badges img {
-  width: 280px;
+  width: 200px;
   height: auto;
-  
 }
 
 .services {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 .services h2{
   font-size: 40px;
 }
+
 .card {
   display: inline-block;
   width: 30%;
+  height: auto;
   margin: 20px;
   padding: 20px;
-  background: linear-gradient(to bottom,#1746b3,#b8bbb7);
+  background: linear-gradient(to bottom,#135875,#b8bbb7);
   border-radius: 10px;
   transition: transform 0.1s ease-in-out;
 }
@@ -221,7 +226,8 @@ body {
   margin-top: 10px;
   padding: 10px 15px;
   background-color:#ffcc00;
-  color: #000;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;

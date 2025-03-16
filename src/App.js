@@ -56,16 +56,6 @@ function App() {
         </div>
       </header>
 
-      {/* Compliance Badges */}
-      <section className="badges_main">
-        <h2>Badges</h2>
-        <div className="badges">
-          <img src="https://hyperproof.io/wp-content/uploads/2023/06/framework-informational-page_hero-badges-nist-800-53.png" alt="NIST 800-53"/>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Seal_of_the_United_States_Department_of_Defense.svg" alt="DoD Compliance"/>
-          <img src="https://www.policymed.com/wp-content/uploads/2013/03/OIG.jpg" alt="HHS Compliance"/>
-        </div>
-      </section>
-
       {/* Services Section with Staggered Animation */}
       <section className="services p-10 rounded-xl">
       <h2 className="text-center text-3xl font-bold text-white mb-8">
@@ -94,6 +84,18 @@ function App() {
         ))}
       </div>
     </section>
+  
+
+      {/* Compliance Badges */}
+      <section className="badges_main">
+        <h2>Badges</h2>
+        <div className="badges">
+          <img src="https://hyperproof.io/wp-content/uploads/2023/06/framework-informational-page_hero-badges-nist-800-53.png" alt="NIST 800-53"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Seal_of_the_United_States_Department_of_Defense.svg" alt="DoD Compliance"/>
+          <img src="https://www.policymed.com/wp-content/uploads/2013/03/OIG.jpg" alt="HHS Compliance"/>
+        </div>
+      </section>
+      
       {/* Footer */}
       <footer>
         <p>© 2025 AI Security Solutions | Defense & Healthcare</p>
