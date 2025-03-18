@@ -56,7 +56,7 @@ function App() {
         </div>
       </header>
 
-      {/* Services Section with Staggered Animation */}
+      {/* Services Section with Staggered Animation
       <section className="services p-10 rounded-xl">
       <h2 className="text-center text-3xl font-bold text-white mb-8">
         Our Services
@@ -83,8 +83,43 @@ function App() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </section > */}
   
+
+    {/* New card style with css*/}
+    <section className="services">
+      <h1 className="services_heading">
+        Our Services
+      </h1><br></br>
+      <article class="cta_article">
+	<img Src='https://accelerationeconomy.com/wp-content/uploads/2023/03/Hyperautomation-AI-and-Healthcare.jpeg'></img>
+	<div class="cta__text-column">
+		<h2>Healthcare AI Solutions</h2>
+		<p>Our Ai driven medical imaging enables early disease detection,while predictive analysis optimize hospital resources and reduce readmissions. We ensure secure,interoperable healthcare data and advanced anomaly detection for rare diseases and adverse events</p>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">Learn More</a>
+	</div>
+</article>
+
+<article class="cta_article_first">
+	<img src='https://cobrasphere.com/wp-content/uploads/identity-access-management-iam-1.jpeg'></img>
+	<div class="cta__text-column">
+		<h2>Salus IAM-Identity & Access Management for DoD</h2>
+		<p>Salus IAM provides Zero Trust Security, ensuring identity-based access at all levels. It supports tactical edge deployment in disconnected environments and meets DoD compliance standards(IL5/IL6, NIST 800-53, DISA STIG)</p>
+		
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">Learn More</a>
+	</div>
+</article>
+
+<article class="cta_article">
+	<img src='https://ibsacademy.org/U/c/cybersecurity-for-ai.jpg'></img>
+	<div class="cta__text-column">
+		<h2>Cybersecurity and AI System Security Services</h2>
+		<p>Our Cybersecurity & AI Security Services include penetration testing to simulate cyberattacks on systems. We conduct cybersecurity audits to ensure compliance and use AI-driven threat dtection for real-time defense against adversarial AI threats.</p>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">Learn More</a>
+	</div>
+</article>
+
+    </section>
 
       {/* Compliance Badges */}
       <section className="badges_main">
