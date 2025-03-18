@@ -25,10 +25,24 @@ body {
 }
 
 /* Logo Styling */
+.logo img {
+  height: 40px; /* Adjust size as needed */
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.nav_left{
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+}
 /* Logo Styling */
-.logo {
+/* Logo Styling */
+.company_name {
   font-size: 30px;
   font-weight: 900;
+  margin: left 14px ;
   font-family: "Poppins", sans-serif; /* Bold, modern font */
   text-transform: uppercase;
   background: linear-gradient(to bottom, #40d1e7, #2dc8e7);
@@ -39,12 +53,12 @@ body {
     2px 2px 0px #1796b3, 
     4px 4px 0px #000202, 
     6px 6px 10px rgba(0, 0, 0, 0.7);
-  position: relative;
+  position:relative;
   display: inline-block;
 }
 
 /* 3D Effect: Adding an extra shadow layer */
-.logo::after {
+.company_name::after {
   content: "Sapiencia.AI";
   position: absolute;
   left: 4px;
@@ -55,28 +69,13 @@ body {
 }
 
 /* Hover Effect */
-.logo:hover {
+.company_name:hover {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
 
 
 
-/* Search Bar Styling */
-.search-bar {
-  padding: 8px 10px;
-  font-size: 16px;
-  border: 2px solid #0a0a0a;
-  border-radius: 20px;
-  outline: none;
-  width: 250px;
-  transition: all 0.3s ease-in-out;
-}
-
-.search-bar:focus {
-  border-color: #ffcc00;
-  box-shadow: 0px 0px 8px rgba(255, 204, 0, 0.6);
-}
 
 /* Navigation Links */
 .nav-links {
@@ -134,7 +133,6 @@ body {
 }
 
 .services {
-  background: url('Screen Recording 2025-03-16 230507.gif');
   padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +172,7 @@ body {
   background: transparent;
   color: #ffcc00;
   margin-right: 20px;
-  font-size:x-large;
+  font-size:large;
   font-weight: bolder;
   border: 5px solid #ffcc00;
 }
@@ -189,7 +187,7 @@ body {
   border: 5px solid #ffcc00;
   font-weight: bolder;
   margin-left: 20px;
-  font-size:x-large;
+  font-size:large;
   color: #ffcc00;
 }
 

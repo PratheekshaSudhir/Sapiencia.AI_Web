@@ -30,14 +30,13 @@ function App() {
     <div>
       {/* Navigation Bar with Logo and Search */}
       <nav className="navbar">
-        <div className="logo">Sapiencia.AI</div>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="search-bar"
-         // value={searchTerm}
-          //onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <div className="nav_left">
+        <div className="logo">
+        <img src="/Sapiencia_Logo.png" alt="Logo"/>
+        </div> 
+        <div className="company_name">Sapiencia.AI</div>
+        </div>
+        
         <div className="nav-links">
           <a href="#">Home</a>
           <a href="#">Solutions</a>
